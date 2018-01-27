@@ -6,6 +6,10 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+ln -s .bashrc ~/
+ln -s .zshrc ~/
+ln -s .vimrc ~/
+
 
 git config --global user.name "Caleb Falcione"
 git config --global user.email "caleb.falcione@gmail.com"
