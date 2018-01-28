@@ -65,9 +65,13 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-export DEFAULT_USER=caleb
-
 # User configuration
+export DEFAULT_USER=caleb
+setopt +o nomatch
+dock() {
+    docker exec -it $1 /bin/bash
+}
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
