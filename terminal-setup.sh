@@ -11,6 +11,10 @@ if [ "$?" = 0 ]; then {
 }; fi
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_SYNTAX_DIR
 
+ZSH_THEMES_DIR=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes
+mkdir -p $ZSH_THEMES_DIR
+wget -O $ZSH_THEMES_DIR/bullet-train.zsh-theme "http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme"
+
 ln -srf .bashrc ~/
 ln -srf .zshrc ~/
 ln -srf .vimrc ~/
