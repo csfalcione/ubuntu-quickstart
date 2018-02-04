@@ -29,7 +29,7 @@ This uses `apt` to install packages. If you're not using a Ubuntu-like distribut
  This will install:
 + `wget`, `git`, `zsh`, and `vim`
 + `fonts-powerline` and `ttf-ancient-fonts`
-+ <a href="https://github.com/robby-russell/oh-my-zsh">oh-my-zsh</a>
++ <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>
 + <a href="https://github.com/caiogondim/bullet-train.zsh">bullet train</a>
 + <a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh syntax highlighting</a>
 
