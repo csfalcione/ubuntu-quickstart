@@ -16,6 +16,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -46,3 +48,8 @@ filetype plugin indent on    " required
 set number
 
 imap <F9> <Esc>
+
+" Powerline stuff
+let g:airline_powerline_fonts = 1
+set encoding=utf-8
+let g:airline_theme = 'bubblegum'
