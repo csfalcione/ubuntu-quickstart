@@ -24,6 +24,8 @@ chmod +x *.sh
 You should probably consider forking this repository and using your own rcfiles.
 
 ### install.sh
+This uses `apt` to install packages. If you're not using a Ubuntu-like distribution, change as necessary.
+
  This will install:
 + `wget`, `git`, `zsh`, and `vim`
 + `fonts-powerline` and `ttf-ancient-fonts`
