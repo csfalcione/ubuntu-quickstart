@@ -14,3 +14,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_SYNTAX_D
 ZSH_THEMES_DIR=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes
 mkdir -p $ZSH_THEMES_DIR
 wget -O $ZSH_THEMES_DIR/bullet-train.zsh-theme "http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme"
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
