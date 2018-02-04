@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt install wget git zsh vim 
+sudo apt install -y wget git zsh vim fonts-powerline ttf-ancient-fonts
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
