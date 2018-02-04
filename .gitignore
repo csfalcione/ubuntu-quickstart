@@ -10,4 +10,4 @@
 
 !/.tmux.conf
 
-!/terminal-setup.sh
+!/*.sh
