@@ -68,10 +68,12 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export DEFAULT_USER=$USER
 setopt +o nomatch
+
 dock() {
     docker exec -it $1 /bin/bash
 }
 
+alias open="xdg-open"
 
 
 BULLETTRAIN_PROMPT_ORDER=(
