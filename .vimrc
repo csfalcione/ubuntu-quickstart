@@ -49,6 +49,8 @@ set number
 
 imap <F9> <Esc>
 
+inoremap <S-Tab> <C-d>
+
 " Powerline stuff
 let g:airline_powerline_fonts = 1
 set encoding=utf-8
