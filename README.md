@@ -62,3 +62,11 @@ execute with
 ```
 ./git-config.sh
 ```
+
+### docker.sh
+This will install `docker-ce` and `docker-compose` as well as add the current user to the docker group.
+
+execute with
+```
+./docker.sh
+```
