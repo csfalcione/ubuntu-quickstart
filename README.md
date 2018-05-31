@@ -5,16 +5,16 @@ rcfiles and whatnot for bash, zsh, and vim with easy installation
 
 Clone the repository with
 ```
-git clone https://github.com/cfalcione/terminal-settings
+git clone https://github.com/cfalcione/ubuntu-quickstart
 ```
 or download and unpack a zip of this repository.
 
 Enter the repository directory
 ```
-cd terminal-settings
+cd ubuntu-quickstart
 ```
 
-Make the scripts executable
+Make the scripts executable if they aren't already
 ```
 chmod +x *.sh
 ```
