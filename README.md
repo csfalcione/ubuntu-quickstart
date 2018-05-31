@@ -1,4 +1,4 @@
-# terminal-settings
+# ubuntu-quickstart
 rcfiles and whatnot for bash, zsh, and vim with easy installation
 
 ## Installation
@@ -69,4 +69,12 @@ This will install `docker-ce` and `docker-compose` as well as add the current us
 execute with
 ```
 ./docker.sh
+```
+
+### gcloud.sh
+This will install `gcloud` in the current user's home folder
+
+execute with
+```
+./gcloud.sh
 ```
