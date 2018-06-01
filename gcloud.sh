@@ -1,14 +1,14 @@
 #!/bin/sh
 
-GCLOUD_VERSION=203.0.0-linux-x86_64
-TARGET_FOLDER=$HOME
-OUTPUT_FILE=$TARGET_FOLDER/gcloud_sdk.tar.gz
-GCLOUD_FOLDER=$TARGET_FOLDER/google-cloud-sdk
+sudo true || exit 1
 
-wget --output-document=$OUTPUT_FILE https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${GCLOUD_VERSION}.tar.gz
+. /etc/os-release
+CLOUD_SDK_REPO="cloud-sdk-$UBUNTU_CODENAME"
 
-tar -xzf $OUTPUT_FILE -C $TARGET_FOLDER
+echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 
-rm $OUTPUT_FILE
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
-$GCLOUD_FOLDER/install.sh
+rm apt-key.gpq
+
+sudo apt-get update && sudo apt-get install -y google-cloud-sdk
