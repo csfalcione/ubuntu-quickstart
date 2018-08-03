@@ -83,13 +83,13 @@ BULLETTRAIN_PROMPT_ORDER=(
   context
   dir
   screen
-  perl
-  ruby
+#  perl
+#  ruby
   virtualenv
 #  nvm
   aws
-  go
-  elixir
+#  go
+#  elixir
   git
   hg
   cmd_exec_time
