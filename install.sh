@@ -16,4 +16,6 @@ mkdir -p $ZSH_THEMES_DIR
 wget -O $ZSH_THEMES_DIR/bullet-train.zsh-theme "http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme"
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+$(dirname "$0")/rcfiles.sh
 vim +PluginInstall +qall
+
