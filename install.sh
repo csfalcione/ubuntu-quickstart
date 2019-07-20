@@ -1,6 +1,7 @@
 #!/bin/sh
 
-sudo apt install -y wget git zsh vim fonts-powerline ttf-ancient-fonts
+sudo apt install -y wget git zsh vim fonts-powerline ttf-ancient-fonts ||
+	exit $?
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
@@ -15,7 +16,7 @@ ZSH_THEMES_DIR=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes
 mkdir -p $ZSH_THEMES_DIR
 wget -O $ZSH_THEMES_DIR/bullet-train.zsh-theme "http://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme"
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-$(dirname "$0")/rcfiles.sh
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim &&
+$(dirname "$0")/rcfiles.sh &&
 vim +PluginInstall +qall
 

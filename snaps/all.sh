@@ -2,9 +2,9 @@
 
 DIR=$(dirname "$0")
 
-sudo true
+sudo true || exit $?
 
-$DIR/install.sh
+$DIR/install.sh || exit $?
 $DIR/vscode.sh
 $DIR/intellij.sh
 $DIR/spotify.sh
