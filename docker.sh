@@ -11,7 +11,7 @@ sudo usermod -aG docker $USER
 
 echo Added $USER to docker group. Installing docker-compose.
 
-COMPOSE_RELEASE=$(docker run calebf/latest-compose-version || echo FAILURE)
+COMPOSE_RELEASE=$(sudo docker run calebf/latest-compose-version || echo FAILURE)
 COMPOSE_URL=https://github.com/docker/compose/releases/download/$COMPOSE_RELEASE/docker-compose-`uname -s`-`uname -m`
 
 echo Downloading docker-compose from $COMPOSE_URL
