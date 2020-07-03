@@ -1,15 +1,4 @@
-sudo true
-
-curl -sSL -o docker-temp.sh https://get.docker.com/ && (
-  sh docker-temp.sh
-  rm docker-temp.sh
-)
-
-echo Docker installed. Adding $USER to docker group.
-
-sudo usermod -aG docker $USER
-
-echo Added $USER to docker group. Installing docker-compose.
+#!/bin/sh
 
 COMPOSE_RELEASE=$(sudo docker run calebf/latest-compose-version || echo FAILURE)
 COMPOSE_URL=https://github.com/docker/compose/releases/download/$COMPOSE_RELEASE/docker-compose-`uname -s`-`uname -m`
