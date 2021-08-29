@@ -10,4 +10,4 @@ git config --global --replace-all user.email "$USER_EMAIL"
 git config --global push.default simple
 git config --global branch.autosetuprebase always
 # Caches git credentials for 19 hours.
-git config --global credential.helper 'cache --timeout 68400'
+git config --global credential.helper 'cache --timeout 31536000'
